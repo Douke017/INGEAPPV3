@@ -13,7 +13,7 @@ class CONVERTER : AppCompatActivity() {
 
         velocity_button.setOnClickListener{startActivity(Intent(applicationContext,velocityConverter::class.java))}
 
-        longitude_button.setOnClickListener{startActivity(Intent(applicationContext,time_converter::class.java))}
+        longitude_button.setOnClickListener{startActivity(Intent(applicationContext,timeConverter::class.java))}
 
         mass_button.setOnClickListener{startActivity(Intent(applicationContext,massConverter::class.java))}
 
