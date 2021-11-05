@@ -1,6 +1,6 @@
 <resources>
     //Home texts
-    <string name="app_name">Proyecto INGEAPP</string>
+    <string name="app_name">IngeApp</string>
     <string name="nameApp_text">INGEAPP</string>
     <string name="firstButton_text">FORMULARIO</string>
     <string name="secondButton_text">CONVERSOR</string>
@@ -26,17 +26,18 @@
     <string name="scale_4_text">TIEMPO</string>
     <string name="scale_5_text">GRADOS</string>
 
+    //Menu Converter
+    <string name="converter_1_text">CONVERTIR DE:</string>
+    <string name="converter_2_text">A:</string>
+    <string name="converter_3_text">RESULTADO:</string>
+    <string name="converter_4_text">CONVERTIR:</string>
+
     //Form Physics
     <string name="physics_1_text">M.R.U.</string>
     <string name="physics_2_text">M.R.U.A.</string>
     <string name="physics_3_text">CAIDA LIBRE</string>
     <string name="physics_4_text">DINAMICA</string>
     <string name="physics_5_text">CHOQUES</string>
-
-    //Home Converter
-    <string name="converter_1_text">DE:</string>
-    <string name="converter_2_text">A:</string>
-    <string name="converter_3_text">RESULTADO:</string>
 
     //Information BC
     <string name="Information_1_text">FLECHA ARRIBA - B1</string>

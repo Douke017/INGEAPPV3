@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 
-class form : AppCompatActivity() {
+class FORMS : AppCompatActivity() {
 
     lateinit var fisicaBtn:Button
     lateinit var mateBtn:Button

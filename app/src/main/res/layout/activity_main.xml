@@ -8,7 +8,7 @@
 
 
     <Button
-        android:id="@+id/secondButton"
+        android:id="@+id/conversor_button"
         android:layout_width="229dp"
         android:layout_height="82dp"
         android:layout_marginStart="91dp"
@@ -18,10 +18,10 @@
         app:cornerRadius="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/firstButton" />
+        app:layout_constraintTop_toBottomOf="@+id/forms_button" />
 
     <Button
-        android:id="@+id/thirdButton"
+        android:id="@+id/controls_button"
         android:layout_width="229dp"
         android:layout_height="82dp"
         android:layout_marginStart="91dp"
@@ -31,10 +31,10 @@
         app:cornerRadius="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/secondButton" />
+        app:layout_constraintTop_toBottomOf="@+id/conversor_button" />
 
     <Button
-        android:id="@+id/firstButton"
+        android:id="@+id/forms_button"
         android:layout_width="229dp"
         android:layout_height="82dp"
         android:layout_marginStart="91dp"
@@ -57,11 +57,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/AppNameTtitle"
         app:srcCompat="@android:drawable/btn_star_big_on" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/AppNameTtitle"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_marginStart="50dp"

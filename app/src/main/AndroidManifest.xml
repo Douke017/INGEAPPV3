@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="ucb.imiot.proyectoingeapp">
 
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <!-- other permissions go here -->
+
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -50,61 +54,59 @@
             android:exported="true" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".form" /></activity>
+                android:value=".FORMS" /></activity>
         <activity
             android:name=".cppForms"
             android:label="@string/topic_4_text"
             android:exported="true" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".form" /></activity>
+                android:value=".FORMS" /></activity>
         <activity
             android:name=".calculusForms"
             android:label="@string/topic_3_text"
             android:exported="true" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".form" /></activity>
+                android:value=".FORMS" /></activity>
         <activity
             android:name=".mathForms"
             android:label="@string/topic_2_text"
             android:exported="true" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".form" /></activity>
+                android:value=".FORMS" /></activity>
         <activity
             android:name=".InformationBluetoothControl"
             android:label="@string/tittle_2_text"
             android:exported="true" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".bluetoothControls" /></activity>
-        <activity
-            android:name=".homeConverter"
-            android:exported="true" />
+                android:value=".BLUETOOTH_CONTROLS" /></activity>
+
         <activity
             android:name=".physicsForms"
             android:label="@string/topic_1_text"
             android:exported="true" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".form" /></activity>
+                android:value=".FORMS" /></activity>
         <activity
-            android:name=".bluetoothControls"
+            android:name=".BLUETOOTH_CONTROLS"
             android:label="@string/tittle_2_text"
             android:exported="true" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" /></activity>
         <activity
-            android:name=".form"
+            android:name=".FORMS"
             android:label="@string/tittle_1_text"
             android:exported="true" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" /></activity>
         <activity
-            android:name=".converter"
+            android:name=".CONVERTER"
             android:label="@string/secondButton_text"
             android:exported="true" >
             <meta-data

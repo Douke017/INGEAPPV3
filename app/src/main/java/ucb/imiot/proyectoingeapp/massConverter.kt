@@ -3,9 +3,11 @@ package ucb.imiot.proyectoingeapp
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class homeConverter : AppCompatActivity() {
+
+class massConverter : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_home_converter)
+        setContentView(R.layout.mass_converter)
     }
 }
