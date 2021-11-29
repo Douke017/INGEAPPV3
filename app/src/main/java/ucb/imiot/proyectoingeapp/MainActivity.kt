@@ -4,6 +4,11 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.app.NotificationChannel
+import android.app.NotificationManager
+import android.content.Context
+import android.media.RingtoneManager
+import androidx.core.app.NotificationCompat
 
 class MainActivity : AppCompatActivity() {
 
@@ -23,8 +28,29 @@ class MainActivity : AppCompatActivity() {
         secondButton.setOnClickListener{startActivity(Intent(this,CONVERTER::class.java))}
         thirdButton.setOnClickListener{startActivity(Intent(this,BLUETOOTH_CONTROLS::class.java))}
 
+        val sound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION)
+        val notificationManager = getSystemService(NOTIFICATION_SERVICE) as NotificationManager
+        val channelId = "com.caller.appoint"
+        val name = getString(R.string.channel_name)
+        val descriptionText = getString(R.string.channel_description)
+        val importance = NotificationManager.IMPORTANCE_DEFAULT
+        val channel = NotificationChannel(channelId, name, importance).apply {
+            description = descriptionText
+        }
+
+
+        notificationManager.createNotificationChannel(channel)
+        val notification = NotificationCompat.Builder(this, channelId)
+            .setSmallIcon(R.drawable.notification_bg)
+            .setContentTitle("Mensaje Diario de IngeApp:")
+            .setContentText("Aplicacion de ingenieros para ingenieros ;)")
+            .setSound(sound)
+            .setAutoCancel(true)
+        notificationManager.notify(0, notification.build())
+
+    }
+
     }
 
 
 
-}
